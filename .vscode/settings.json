@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "sched.h": "c",
+        "config.h": "c",
+        "cloud.h": "c",
+        "billing.h": "c",
+        "machine.h": "c",
+        "unistd.h": "c",
+        "stdlib.h": "c",
+        "bill.h": "c",
+        "spot.h": "c",
+        "scheduler.h": "c"
+    }
+}
