@@ -29,7 +29,9 @@ config_t parse(int argc, char **argv)
                 break;
             case 'h':
                 printf("Usage: %s [OPTIONS] \n\nOptions:\n", argv[0]);
-                printf("  -s  Number of spot machines(default 1).\n");
+                printf("  -n  Number of spots (default 1).\n");
+                printf("  -m  Number of machines (default 1).\n");
+                printf("  -r  Seed (default 1).\n");
                 printf("  -h  Prints this help.\n");
             default:
                 exit(1);

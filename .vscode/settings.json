@@ -9,6 +9,10 @@
         "stdlib.h": "c",
         "bill.h": "c",
         "spot.h": "c",
-        "scheduler.h": "c"
+        "scheduler.h": "c",
+        "cluster.h": "c",
+        "defs.h": "c",
+        "shared.h": "c",
+        "queue.h": "c"
     }
 }

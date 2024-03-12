@@ -12,11 +12,12 @@ void *spot_service(void *args){
 
     int service = TRUE;
     int seconds = 0;
-    
+   // int *_id = (int *)args;
+
     while(service){
         
         if(seconds > 2){
-            printf("Spot executed\n");
+           // printf("Spot %d executed\n", *_id);
             service = FALSE;
         }
 
@@ -34,7 +35,7 @@ spot_t *burst_spots(int spots){
 
     /* Warning: malloc call */
     revocables = malloc(sizeof(spot_t) * spots);
-
+    
     for (idx = 0; idx < spots; idx++){
         revocables[idx]._id = idx; /* Spot id */
         if (pthread_create(&revocables[idx].thread, NULL, spot_service, NULL)){

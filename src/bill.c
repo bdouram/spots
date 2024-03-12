@@ -40,7 +40,7 @@ bill_t *start_billing_service(){
     return bill;
 }
 
-void end_bill_service(bill_t *worker){
-    pthread_join(worker->thread, NULL);
-    free(worker);
+void end_bill_service(bill_t *self){
+    pthread_join(self->thread, NULL);
+    free(self);
 }
